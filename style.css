@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 273px;
+  box-shadow: 5px 0 15px -5px rgba(0,0,0,0.25), 0 5px 15px -5px rgba(0,0,0,0.22);
+  overflow: hidden;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: row;
+  height: 30px;    
+  background: #a5ab61;
+}
+
+.card__header__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.card__header__title {
+  text-transform: uppercase;
+}
+
+.card__header__image {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: url('./image/s-icon.png') no-repeat;
+  background-position: -58px -2px;
+  background-color: #909659;
+}
+
+.card__content {
+  position: relative;
+  padding: 20px 20px 10px 20px;
+}
+
+.card__content__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__content__text {
+  margin-bottom: 20px;
+}
+
+.card__content__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info__item{
+  width: 85px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.info__item__img {
+  position: absolute;
+  left: -5px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url('./image/s-icon.png') no-repeat;
+}
+.info__item__img--date-period {
+  background-position: 4px -5px;
+}
+.info__item__img--username {
+  background-position: -90px -6px;
+}
+
+.info__item__img--percent {
+  background-position: -17px -3px;
+}
+
+.info__item__img--people {
+  background-position: -40px -3px;
+}
+
+.card__link {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  background: url('./image/s-icon.png') no-repeat;
+  background-position: -112px -2px;
+  cursor: pointer;
+}
